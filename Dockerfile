@@ -1,4 +1,7 @@
 FROM kibana
 
-EXPOSE 80 5601
+WORKDIR /app
+COPY CHECKS /app
+
+EXPOSE 5601
 
