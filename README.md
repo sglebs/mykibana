@@ -1,3 +1,8 @@
+Use this project to install a kibana in your dokku install. We assume dokku is at 127.0.0.1.nip.io
+
+Pre-requisites
+==============
+Deploy our elasticsearch project first.
 
 Installing
 ==========
@@ -10,6 +15,7 @@ dokku config:set kibana NODE_OPTIONS="--max-old-space-size=200"
 dokku docker-options kibana add run "-p 80:5601 -m 256mb"
 git push dokku
 
-
-ELASTICSEARCH_URL=
-NODE_OPTIONS="--max-old-space-size=200"
+Using
+======
+http://elasticsearch.127.0.0.1.nip.io should work if port redirection (docker-options) worked.
+Otherwise you need to use http://elasticsearch.127.0.0.1.nip.io:5601
