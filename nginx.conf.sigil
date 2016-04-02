@@ -1,6 +1,6 @@
 upstream {{ .APP }} {
 {{ range .DOKKU_APP_LISTENERS | split " " }}
-  server {{ . }}:{{ 5661 }};
+  server {{ . }}:{{ 5601 }};
 {{ end }}
 }
 server {
