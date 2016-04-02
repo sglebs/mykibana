@@ -1,4 +1,4 @@
 FROM kibana
 
-EXPOSE 5601
+EXPOSE 5601 80
 
