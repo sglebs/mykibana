@@ -2,6 +2,3 @@ FROM kibana
 
 WORKDIR /app
 COPY CHECKS /app
-
-EXPOSE 5601
-
