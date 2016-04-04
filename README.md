@@ -14,7 +14,7 @@ dokku apps:create kibana
 dokku config:set kibana ELASTICSEARCH_URL=http://elasticsearch.127.0.0.1.nip.io:9200
 dokku config:set kibana NODE_OPTIONS="--max-old-space-size=200"
 dokku docker-options:add kibana deploy "-p 80:5601"
-dokku docker-options:add kibana deploy "-m 384mb"
+dokku docker-options:add kibana deploy "-m 384m"
 git push dokku
 ```
 
